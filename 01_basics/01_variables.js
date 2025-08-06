@@ -19,7 +19,7 @@ beacuse of issue in block scope and functional scope
 
 In JavaScript
  if you declare a variable but don’t assign any value to it
-JavaScript considers it as undefined like the fouth value is undefined
+JavaScript considers it as undefined like the fourth value is undefined
 
 */
 
