@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body style="background-color: rgb(0, 0, 0) ; color: aliceblue;">
+    <h2>CRICKET</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="KING" src=https://imgs.search.brave.com/vhz-wMoZXIMEZWFT82Za3Cf_-bThthYu5MJcK9IzYaI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93MC5w/ZWFrcHguY29tL3dh/bGxwYXBlci85NDkv/Nzc3L0hELXdhbGxw/YXBlci12aXJhdC1r/b2hsaS13aXRoLW1y/Zi1iYXQtdmlyYXQt/a29obGktbXJmLWJh/dC1jcmlja2V0ZXIt/c3BvcnRzLWtpbmct/a29obGktaW5kaWFu/LWplcnNleS10aHVt/Ym5haWwuanBn alt=""></li>
+            <li><img width="400px" id="KING" src=https://imgs.search.brave.com/_0nU0AV186vhgxoFGyDftPs4EswIoo-BoyPnEoyk81Q/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQz/NTg3NjQyNi9waG90/by9tZWxib3VybmUt/YXVzdHJhbGlhLXZp/cmF0LWtvaGxpLW9m/LWluZGlhLXJlLWVu/dGVycy10aGUtbWNn/LWFmdGVyLXdpbm5p/bmctdGhlLWljYy1t/ZW5zLXQyMC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9Nkta/X05lREdEVmlObERJ/TnllOHdydm1LbDRs/a3hCYlo0WnF0ZEJm/Y3ZhWT0 alt=""></li>
+            <li><img width="450px" id="KING" src=https://imgs.search.brave.com/K0nwps7274y5CA0r0z_keNSnkyxOJ36PNz7fDs7Ze9g/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTA3/NjQzNTQxNC9waG90/by9hZGVsYWlkZS1h/dXN0cmFsaWEtdmly/YXQta29obGktb2Yt/aW5kaWEtcG9zZXMt/ZHVyaW5nLXRoZS1p/bmRpYS10ZXN0LXNx/dWFkLXBvcnRyYWl0/LXNlc3Npb24tb24u/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PVR2WE96VzdCVmN2/NUlYRGQ5YjFLa1JJ/Wk1wMktidjNqbkFo/SXBadzFNNGc9 alt=""></li>
+            <li><img width="500px" height="500px" id="KING" src="https://imgs.search.brave.com/brAvfR5dsL_7ejvQmdz_T6QC8AOiewantuhxTDbTKuc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnJl/ZGQuaXQvdzhkZ3Iz/aTJmOGRmMS5wbmc" alt=""></li>
+             
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // document.getElementById('owl').onclick = function(){
+    //     alert("owl clicked")
+    // }
+
+     // attachEvent()
+    // jQuery - on
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // }, false)
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    //     e.stopPropagation()
+    // }, false)
+    
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    //     console.log("google clicked");
+    // }, false)
+   
+    
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+    
+        
+    })
+    
+    //removeIt.parentNode.removeChild(removeIt)
+</script>
+</html>
